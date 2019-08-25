@@ -12,10 +12,11 @@ body {
 .biggest{
 
   width: 800px;
-  height: 5px;
+  height: 1px;
   margin: 0 auto;
   padding: 50px;
   background-color:  #e4decd  ;
+  padding-top: 10px;
 }
 div.logins{
   width: 500px;
@@ -29,34 +30,39 @@ div.logins{
 
 }
 .signin {
-   width: 200px;
-   height: 40px;
-  background-color: #4CAF50; /* Green */
-   border: none;
-   color: white;
-   padding: 10px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 12px;
-   margin: 4px 2px;
-   cursor: pointer;
-   width: 200px;
 
+     width: 200px;
+     height: 40px;
+    background-color: #4CAF50; /* Green */
+     border: none;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 12px;
+     margin: 4px 2px;
+     cursor: pointer;
+     width: 200px;
 }
 .signup {
-   width: 200px;
-   height: 40px;
-  background-color: #4CAF50; /* Green */
-   border: none;
-   color: white;
-   padding: 10px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 12px;
-   margin: 4px 2px;
-   cursor: pointer;
-   width: 200px;
 
+     width: 200px;
+     height: 40px;
+    background-color: #4CAF50; /* Green */
+     border: none;
+     color: white;
+     padding: 10px 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 12px;
+     margin: 4px 2px;
+     cursor: pointer;
+     width: 200px;
+}
+div.cen {
+  width: 500px;
+  height: 1px;
+  margin: 0 auto;
 }
