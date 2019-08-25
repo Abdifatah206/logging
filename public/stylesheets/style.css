@@ -1,8 +1,19 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
 
-a {
-  color: #00B7FF;
+}
+.big{
+
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color:  #e4decd  ;
+}
+.biggest{
+
+  width: 800px;
+  height: 5px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color:  #e4decd  ;
 }
