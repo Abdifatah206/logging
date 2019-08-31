@@ -13,13 +13,13 @@
 
 
 <div class="logins">
-  <form><br><br><br>
+  <form  action='/api/v1/login/signin' method="post" ><br><br><br>
   <p> Member login</p>
 
-  <input type="email" name="" class="email" value="" placeholder="your email" required><br>
+  <input type="text" name="username" class="email" value="" placeholder="username" required><br>
 
-  <input type="password" name="" class="pass" value="" placeholder="password" required><br>
-  <button  class="signin">Login</button><br>
+  <input type="password" name="username" class="pass" value="" placeholder="password" required><br>
+  <button  class="signin" type="submit">Login</button><br>
 
   <p> Not Registered ? <a href="signup.html">Register</a>
   </form>
