@@ -14,18 +14,18 @@ router.post('/signin', function(request, response) {
 			if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
-        request.session.password = password;
-				response.redirect('/signup');
+        //request.session.password = password;
+				response.redirect('/');
 			} else {
 				response.send('Incorrect Username and/or Password!');
 			}
 			response.end();
 		});
-	} else {
-		response.send('Please enter Username and Password!');
-		response.end();
 	}
+
 });
+
+
 
 
 
