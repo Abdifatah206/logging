@@ -7,19 +7,25 @@ router.get('/', function(request, response) {
 });
 
 router.post('/signin', function(request, response) {
-	var username = request.body.username;
-	var password = request.body.password;
-	if (username && password) {
+	const username = request.body.username;
+	const password = request.body.password;
+
 		db.query('SELECT * FROM logs WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
 			if (results.length > 0) {
-				request.session.loggedin = true;
-				request.session.username = username;
-        //request.session.password = password;
-				response.redirect('/');
+				if(results[0].password == password){
+        res.send({
+          "code":200,
+          "success":"login sucessfull"
+            });
+					}
+				// request.session.loggedin = true;
+				// request.session.username = username;
+        // request.session.password = password;
+				// response.redirect('/');
 			}
-			
+
 		});
-	}
+	
 
 });
 
