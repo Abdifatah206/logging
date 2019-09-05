@@ -16,10 +16,8 @@ router.post('/signin', function(request, response) {
 				request.session.username = username;
         //request.session.password = password;
 				response.redirect('/');
-			} else {
-				response.send('Incorrect Username and/or Password!');
 			}
-			response.end();
+			
 		});
 	}
 
