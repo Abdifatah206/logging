@@ -9,25 +9,31 @@ router.get('/', function(request, response) {
 router.post('/signin', function(request, response) {
 	const username = request.body.username;
 	const password = request.body.password;
-
+	if (username && password) {
 		db.query('SELECT * FROM logs WHERE username = ? AND password = ?', [username, password], function(error, results, fields) {
 			if (results.length > 0) {
-				if(results[0].password == password){
-        res.send({
-          "code":200,
-          "success":"login sucessfull"
-            });
-					}
-				// request.session.loggedin = true;
-				// request.session.username = username;
-        // request.session.password = password;
-				// response.redirect('/');
-			}
+					request.session.loggedin = true;
+					request.session.username = username;
+					response.redirect('/');
+				} else {
+					response.send('Incorrect Username and/or Password!');
+				}
+				response.end();
+			});
+		} else {
+			response.send('Please enter Username and Password!');
+			response.end();
+		}
+	});
 
-		});
-	
-
-});
+	router.get('/', function(request, response) {
+		if (request.session.loggedin) {
+			response.send('Welcome back, ' + request.session.username + '!');
+		} else {
+			response.send('Please login to view this page!');
+		}
+		response.end();
+	});
 
 
 
