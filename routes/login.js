@@ -4,11 +4,6 @@ const db = require('../db');
 
 const mysql = require('mysql');
 
-
-
-
-
-
 router.get('/', function(request, response) {
 	response.sendFile(path.join(__dirname + '/signin.html'));
 });
@@ -21,7 +16,7 @@ router.post('/signin', function(request, response) {
 			if (results.length > 0) {
 				request.session.loggedin = true;
 				request.session.username = username;
-				response.redirect('/');
+				response.redirect('/api/v1/register');
 			} else {
 				response.send('Incorrect Username and/or Password!');
 			}

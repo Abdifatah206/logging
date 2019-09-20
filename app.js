@@ -10,6 +10,7 @@ const mysql = require('mysql');
 const indexRouter = require('./routes/index');
 const registerRouter = require('./routes/register');
 const loginRouter = require('./routes/login')
+const index1Router = require('./routes/index1')
 
 
 const app = express();
@@ -35,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/api/v1/register', registerRouter);
 app.use('/api/v1/login', loginRouter);
+app.use('/index1', index1Router);
 
 
 // catch 404 and forward to error handler
