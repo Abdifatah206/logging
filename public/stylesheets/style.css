@@ -1,73 +1,16 @@
 body {
+    background-image: url('images/wide.jpg')
 
 }
 .big{
 
   width: 800px;
-  height: 600px;
+  height: 1000px;
   margin: 0 auto;
   padding: 50px;
   background-color:  #e4decd  ;
 }
-div.small{
-  width: 300px;
-  height: 500px;
-  margin: 0 auto;
-  background-color: #7ebafa;
-  border-radius: 25px;
-  text-align: center;
 
-
-}
-div.tit {
-  width: 300px;
-  height: 40px;
-  margin: 0 auto;
-  margin-top: 0 auto;
-  background-color: #5d6d7e ;
-  color: white;
-
-text-decoration-color: white;
-  font-size: 25px;
-  text-align: center;
-  padding-top: 10px;
-
-}
-
-.bill{
-  width: 150px;
-  padding: 7px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-
-
-}
-
-.fedtax{
-  width: 150px;
-  padding: 7px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-
-
-}
-.statetax{
-  width: 150px;
-  padding: 7px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-
-
-}
 .form{
   padding-top: 20px;
   margin: 0 auto;
@@ -148,6 +91,10 @@ div.logins{
 div.navbar {
   overflow: hidden;
   background-color: #333;
+    padding-right: 100px;
+    padding-left: 100px;
+    float: right;
+    position:relative;
 }
 .navbar a {
   float: left;
@@ -156,6 +103,8 @@ div.navbar {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+    justify-content: center;
+    margin: right;
 }
 
 .dropdown {
@@ -208,63 +157,3 @@ div.navbar {
 
 
 
-div.banner{
-  width: 800px;
-  height: 30px;
-  margin: 0 auto;
-  padding-top: 10px;
-  background-color: green;
-}
-.btn1{
-  background-color: #4CAF50;
-  color: white;
-  padding-top: 10px;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  height: 30px;
-  width: 100px;
-
-}
-.btn2{
-  background-color: #4CAF50;
-  color: white;
-  padding-top: 10px;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  height: 30px;
-  width: 100px;
-
-}
-.btn3{
-  background-color: #4CAF50;
-  color: white;
-  padding-top: 10px;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  height: 30px;
-  width: 100px;
-
-}
-
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
