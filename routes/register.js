@@ -26,8 +26,8 @@ router.post('/signup', function(req,res,next){
     if (error){
       res.status(500).send(error);
     }
-    //res.status(201).send('RECORD INSERTED......');
-    res.redirect('/')
+    res.status(201).send('RECORD INSERTED......');
+    //res.redirect('/')
   });
 });
 
